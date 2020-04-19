@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task3</title>
+</head>
+<body>
+   <script>
+       function output(data){
+let datArr=[];
+           for (i=1; i<=data; i++){
+               if(i%5==0 && i%3==0 && i%2==0){
+                   datArr.push("yu-gi-oh")
+               } else if(i%5==0 && i%3==0){
+                datArr.push("gi-oh")
+               } else if (i%5==0 && i%2==0){
+                datArr.push("yu-oh")
+               } else if (i%2==0 && i%3==0){
+                datArr.push("yu-gi")
+               } else if (i%2==0){
+                datArr.push("yu")
+               } else if (i%3==0){
+                datArr.push("gi")
+               } else if (i%5==0){
+                datArr.push("oh")
+               } else {
+                datArr.push(i)
+               }
+           }
+           return datArr;
+       }
+       console.log(output(100));
+       console.log(output(60));
+   </script> 
+</body>
+</html>
